@@ -11,6 +11,12 @@
   --muted: #69756c;
   --line: #e6e8df;
   --shadow: 0 14px 36px rgba(39, 53, 45, 0.08);
+  --bb: url(img/bb.jpg);
+  --tpasta: url(img/tpasta.jpg);
+  --bpancake: url(img/bpancake.jpg);
+  --kbb: url(img/kbb.jpg);
+  --salad: url(img/salad.jpg);
+  --yogurt: url(img/yogurt.jpg);
 }
 * {
   box-sizing: border-box;
@@ -171,7 +177,10 @@ select {
   display: grid;
   place-items: center;
   border-radius: 48% 52% 43% 57%/51% 43% 57% 49%;
-  background: #e5eddd;
+  /* background: #e5eddd; */
+  background-image: var(--bb);
+  background-position: center;
+  background-size: cover;
 }
 .food-plate {
   position: relative;
@@ -297,7 +306,10 @@ select {
   min-height: 300px;
   display: grid;
   place-items: center;
-  background: #e8efdf;
+  /* background: #e8efdf; */
+  background-image: var(--bb);
+  background-position: center;
+  background-size: cover;
 }
 .bibimbap-art:before {
   content: "";
@@ -390,22 +402,40 @@ select {
   filter: drop-shadow(0 7px 5px #263d2918);
 }
 .art-pasta {
-  background: #f8e7d7;
+  /* background: #f8e7d7; */
+  background-image: var(--tpasta);
+  background-position: center;
+  background-size: cover;
 }
 .art-pancake {
-  background: #f6edcf;
+  /* background: #f6edcf; */
+  background-image: var(--bpancake);
+  background-position: center;
+  background-size: cover;
 }
 .art-rice {
-  background: #f0e4d9;
+  /* background: #f0e4d9; */
+  background-image: var(--kbb);
+  background-position: center;
+  background-size: cover;
 }
 .art-bibimbap {
-  background: #e8efdf;
+  /* background: #e8efdf; */
+  background-image: var(--bb);
+  background-position: center;
+  background-size: cover;
 }
 .art-salad {
-  background: #e1efdf;
+  /* background: #e1efdf; */
+  background-image: var(--salad);
+  background-position: center;
+  background-size: cover;
 }
 .art-yogurt {
-  background: #f7e4e5;
+  /* background: #f7e4e5; */
+  background-image: var(--yogurt);
+  background-position: center;
+  background-size: cover;
 }
 .recipe-info {
   padding: 20px;
