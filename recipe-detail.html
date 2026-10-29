@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>채소 비빔밥 만들기 | 오늘의 한 끼</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html"
+          >오늘의 한 끼<span>My Recipe Book</span></a
+        >
+        <nav class="main-nav" aria-label="주 메뉴">
+          <a href="index.html">홈</a><a href="recipes.html">레시피</a
+          ><a class="active" href="recipe-detail.html">추천 레시피</a
+          ><a href="guide.html">요리 가이드</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">FEATURED RECIPE</p>
+          <h1>알록달록 채소 비빔밥</h1>
+          <p>
+            여러 가지 채소와 고추장 양념을 한 그릇에 담아 비벼 먹는 든든한
+            한식이에요.
+          </p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container detail-layout">
+          <div>
+            <div
+              class="detail-art hero-art"
+              role="img"
+              aria-label="비빔밥 일러스트"
+            >
+              <div class="food-plate">
+                <div class="rice"></div>
+                <div class="veg veg-one"></div>
+                <div class="veg veg-two"></div>
+                <div class="veg veg-three"></div>
+                <div class="egg"></div>
+                <div class="pepper"></div>
+              </div>
+            </div>
+            <div class="detail-facts">
+              <span>⏱ 준비 15분</span><span>🍳 조리 15분</span
+              ><span>🌱 난이도 쉬움</span>
+            </div>
+            <section class="content-panel">
+              <h2>만드는 순서</h2>
+              <ol class="step-list">
+                <li>
+                  <strong>재료 손질하기</strong>
+                  <p>
+                    당근과 애호박은 가늘게 채 썰고 시금치는 깨끗이 씻어
+                    준비해요.
+                  </p>
+                </li>
+                <li>
+                  <strong>채소 볶기</strong>
+                  <p>
+                    팬에 기름을 조금 두르고 채소를 각각 가볍게 볶아요. 소금은
+                    조금씩 넣어 주세요.
+                  </p>
+                </li>
+                <li>
+                  <strong>양념 만들기</strong>
+                  <p>고추장, 참기름, 간장, 물을 섞어 비빔 양념을 만들어요.</p>
+                </li>
+                <li>
+                  <strong>그릇에 담기</strong>
+                  <p>
+                    밥 위에 준비한 채소와 달걀을 올리고 양념을 곁들이면 완성!
+                  </p>
+                </li>
+              </ol>
+            </section>
+          </div>
+          <aside class="content-panel ingredients-panel">
+            <p class="eyebrow">INGREDIENTS</p>
+            <h2>재료 준비</h2>
+            <p class="muted">
+              기본 2인분 기준 · 인분을 바꾸면 양이 자동으로 계산돼요.
+            </p>
+            <label class="servings-label" for="servings"
+              >몇 인분으로 만들까요?</label
+            >
+            <select id="servings" name="servings">
+              <option value="1">1인분</option>
+              <option value="2" selected>2인분</option>
+              <option value="3">3인분</option>
+              <option value="4">4인분</option>
+            </select>
+            <ul class="ingredient-list">
+              <li>
+                <span>밥</span
+                ><strong
+                  ><span data-amount="2" data-unit="공기">2 공기</span></strong
+                >
+              </li>
+              <li>
+                <span>당근</span
+                ><strong
+                  ><span data-amount="0.5" data-unit="개">0.5 개</span></strong
+                >
+              </li>
+              <li>
+                <span>애호박</span
+                ><strong
+                  ><span data-amount="0.5" data-unit="개">0.5 개</span></strong
+                >
+              </li>
+              <li>
+                <span>시금치</span
+                ><strong
+                  ><span data-amount="100" data-unit="g">100 g</span></strong
+                >
+              </li>
+              <li>
+                <span>달걀</span
+                ><strong
+                  ><span data-amount="2" data-unit="개">2 개</span></strong
+                >
+              </li>
+              <li>
+                <span>고추장</span
+                ><strong
+                  ><span data-amount="2" data-unit="큰술">2 큰술</span></strong
+                >
+              </li>
+              <li>
+                <span>참기름</span
+                ><strong
+                  ><span data-amount="1" data-unit="큰술">1 큰술</span></strong
+                >
+              </li>
+            </ul>
+            <div class="note-box">
+              재료의 크기나 입맛에 따라 양념과 채소의 양은 조금씩 조절해도
+              좋아요.
+            </div>
+            <a class="button button-primary button-full" href="recipes.html"
+              >다른 레시피 보기</a
+            >
+          </aside>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="logo logo-footer" href="index.html"
+          >오늘의 한 끼<span>My Recipe Book</span></a
+        >
+        <p>쉽고 즐거운 집밥 기록 · 개인 학습용 웹사이트</p>
+      </div>
+    </footer>
+  </body>
+</html>

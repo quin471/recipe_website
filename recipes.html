@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>레시피 모음 | 오늘의 한 끼</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html"
+          >오늘의 한 끼<span>My Recipe Book</span></a
+        >
+        <nav class="main-nav" aria-label="주 메뉴">
+          <a href="index.html">홈</a
+          ><a class="active" href="recipes.html">레시피</a
+          ><a href="recipe-detail.html">추천 레시피</a
+          ><a href="guide.html">요리 가이드</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">RECIPE COLLECTION</p>
+          <h1>레시피 모음</h1>
+          <p>먹고 싶은 메뉴를 고르고, 카테고리로 간편하게 찾아보세요.</p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="filter-row" aria-label="레시피 카테고리 필터">
+            <button
+              class="filter-button active"
+              type="button"
+              data-category="all"
+              aria-pressed="true"
+            >
+              전체 보기
+            </button>
+            <button
+              class="filter-button"
+              type="button"
+              data-category="korean"
+              aria-pressed="false"
+            >
+              한식
+            </button>
+            <button
+              class="filter-button"
+              type="button"
+              data-category="western"
+              aria-pressed="false"
+            >
+              양식
+            </button>
+            <button
+              class="filter-button"
+              type="button"
+              data-category="dessert"
+              aria-pressed="false"
+            >
+              디저트
+            </button>
+          </div>
+          <p class="filter-status" id="filter-status" aria-live="polite">
+            전체 레시피를 보여주고 있어요.
+          </p>
+          <div class="recipe-grid recipe-grid-large">
+            <article class="recipe-card" data-category="korean">
+              <a
+                href="recipe-detail.html"
+                class="recipe-art art-bibimbap"
+                aria-label="비빔밥 레시피 보기"
+                ><span>🥗</span></a
+              >
+              <div class="recipe-info">
+                <span class="tag">한식</span>
+                <h2><a href="recipe-detail.html">채소 비빔밥</a></h2>
+                <p>채소와 고추장으로 만드는 든든한 한 그릇</p>
+                <div class="card-bottom">
+                  <span>30분</span><span>초급</span>
+                </div>
+              </div>
+            </article>
+            <article class="recipe-card" data-category="western">
+              <a
+                href="recipe-detail.html"
+                class="recipe-art art-pasta"
+                aria-label="토마토 파스타 레시피 보기"
+                ><span>🍝</span></a
+              >
+              <div class="recipe-info">
+                <span class="tag">양식</span>
+                <h2><a href="recipe-detail.html">토마토 파스타</a></h2>
+                <p>토마토 소스와 마늘 향이 어울리는 메뉴</p>
+                <div class="card-bottom">
+                  <span>25분</span><span>초급</span>
+                </div>
+              </div>
+            </article>
+            <article class="recipe-card" data-category="korean">
+              <a
+                href="recipe-detail.html"
+                class="recipe-art art-rice"
+                aria-label="김치볶음밥 레시피 보기"
+                ><span>🍳</span></a
+              >
+              <div class="recipe-info">
+                <span class="tag">한식</span>
+                <h2><a href="recipe-detail.html">김치볶음밥</a></h2>
+                <p>남은 밥과 김치로 빠르게 만드는 한 끼</p>
+                <div class="card-bottom">
+                  <span>15분</span><span>초급</span>
+                </div>
+              </div>
+            </article>
+            <article class="recipe-card" data-category="dessert">
+              <a
+                href="recipe-detail.html"
+                class="recipe-art art-pancake"
+                aria-label="바나나 팬케이크 레시피 보기"
+                ><span>🥞</span></a
+              >
+              <div class="recipe-info">
+                <span class="tag">디저트</span>
+                <h2><a href="recipe-detail.html">바나나 팬케이크</a></h2>
+                <p>바나나를 넣어 부드럽게 구운 팬케이크</p>
+                <div class="card-bottom">
+                  <span>20분</span><span>초급</span>
+                </div>
+              </div>
+            </article>
+            <article class="recipe-card" data-category="western">
+              <a
+                href="recipe-detail.html"
+                class="recipe-art art-salad"
+                aria-label="그린 샐러드 레시피 보기"
+                ><span>🥬</span></a
+              >
+              <div class="recipe-info">
+                <span class="tag">양식</span>
+                <h2><a href="recipe-detail.html">그린 샐러드</a></h2>
+                <p>신선한 채소와 상큼한 드레싱</p>
+                <div class="card-bottom">
+                  <span>10분</span><span>초급</span>
+                </div>
+              </div>
+            </article>
+            <article class="recipe-card" data-category="dessert">
+              <a
+                href="recipe-detail.html"
+                class="recipe-art art-yogurt"
+                aria-label="과일 요거트 볼 레시피 보기"
+                ><span>🍓</span></a
+              >
+              <div class="recipe-info">
+                <span class="tag">디저트</span>
+                <h2><a href="recipe-detail.html">과일 요거트 볼</a></h2>
+                <p>요거트와 제철 과일로 완성하는 간식</p>
+                <div class="card-bottom"><span>5분</span><span>초급</span></div>
+              </div>
+            </article>
+          </div>
+          <p class="empty-message" id="empty-message" hidden>
+            이 카테고리에는 아직 레시피가 없어요.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="logo logo-footer" href="index.html"
+          >오늘의 한 끼<span>My Recipe Book</span></a
+        >
+        <p>쉽고 즐거운 집밥 기록 · 개인 학습용 웹사이트</p>
+      </div>
+    </footer>
+  </body>
+</html>
